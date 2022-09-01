@@ -1,0 +1,16 @@
+<script>
+    let str = prompt("Enter the string");
+    let result = addJa(str);
+    alert(`final string is ${result}`);
+
+    function addJa(str)  {
+        let strLength = str.length;
+        if(str[0] == 'J' || str[0] == 'j' && str[1] == 'a' && str[1] == 'a'){
+            return str;
+        } else {
+            str = 'ja'+str;
+            return str;
+        }
+    }
+
+</script>

@@ -1,0 +1,23 @@
+<!-- Program to compute the sum of the two given integers. if the two values are same, then returns triple their sum. -->
+
+<script>
+    checkSum = (val1 , val2) => {
+        let result;
+        result = val1 + val2;
+        if(val1 == val2){
+            result = result ** 3;
+        }
+        return result;
+    }
+    
+    
+    
+    let num1 = +prompt("enter value 1");
+    let num2 = +prompt("enter value 2");
+    let result = checkSum(num1,num2);
+
+    
+
+    alert(`result is ${result}`);
+
+</script>

@@ -1,0 +1,10 @@
+<script>
+    let celcius = +prompt("Enter celcius value",0);
+    let result = celcitofahre(celcius);
+    alert(`${celcius} fahrenheit value is ${result}`);
+
+    function celcitofahre(val){
+        let res = val * (9/5) + 32;
+        return res;
+    }
+</script>

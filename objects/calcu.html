@@ -1,0 +1,28 @@
+<script>
+    let calculator = {
+
+        
+        read(){
+            this.a = +prompt("Enter value 1" , 0);
+            this.b = +prompt("Enter value 2", 0);
+    
+        },
+
+        sum(){
+            let sum = this.a + this.b;
+            return sum;
+        },
+
+         mul(){
+            let mul = this.a * this.b;
+            return mul;
+        }
+    };
+    
+        
+        
+        calculator.read();
+        alert(calculator.sum());
+        alert(calculator.mul());
+        
+</script>

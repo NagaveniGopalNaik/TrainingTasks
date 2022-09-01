@@ -1,0 +1,32 @@
+<!--  Write a program to make a simple calculator -->
+
+<script>
+    let val1 = +prompt("Enter first operand",0);
+    let val2 = +prompt("Enter second operand",0);
+
+    let operator = prompt("enter which operation you want to be exicute in +,-,* or /",'+');
+    let res = 0;
+
+    switch(operator){
+        case '+' : res = val1 + val2;
+        alert(`${val1} ${operator} ${val2} = ${res}`);
+                    break;
+        case '-' : res = val1 - val2;
+        alert(`${val1} ${operator} ${val2} = ${res}`);
+                    break;
+        case '*' : res = val1 * val2;
+        alert(`${val1} ${operator} ${val2} = ${res}`);
+                    break;
+        case '/' : if(val2 != 0){
+                    res = val1 / val2;
+                    alert(`${val1} ${operator} ${val2} = ${res}`);
+                    break;
+        } else{
+            alert("second operator value zero can't division");
+        }
+                
+            
+        default : alert("plz select currect operator in this ( +, -, *, /)");
+        }
+        
+</script>

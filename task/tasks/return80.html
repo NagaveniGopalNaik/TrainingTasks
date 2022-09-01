@@ -1,0 +1,18 @@
+<!-- Write a program to compute the sum of the two given integer. if the sum in the range 50-80 return 65 otherwise return 80. -->
+
+<script>
+let val1 = +prompt("Enter value 1", 0);
+let val2 = +prompt("Enter value 2",0);
+let result = valSum(val1,val2);
+alert(`sum value is ${result}`);
+
+function valSum(num1,num2){
+    let res = num1 + num2;
+    if(res>=50 && res<=80){
+        return 65;
+    } else{
+        return 80;
+    }
+
+}
+</script>

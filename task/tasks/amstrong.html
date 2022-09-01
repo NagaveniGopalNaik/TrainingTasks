@@ -1,0 +1,29 @@
+<!-- Write a program to check whether a number is amstrong or not -->
+<script>
+    let num = prompt("enter number");
+    let numLength = num.length;
+
+    let amStrong = amstrong(num);
+
+    function amstrong(num){
+
+        let result = 0;
+        for(let val = 0 ; val < numLength ; val++){
+        let res = 1;
+        for(let i = 0 ; i < numLength ; i++){
+            res *= num[val];
+            // alert(res);
+        }
+        result += res;
+    }
+    return result;
+    }
+
+
+    // alert(result);
+    if(num == amStrong){
+        alert(`${num} is amstrong number`);
+    } else {
+        alert(`${num} is not amstrong number`);
+    }
+</script>

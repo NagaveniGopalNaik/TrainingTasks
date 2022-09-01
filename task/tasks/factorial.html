@@ -1,0 +1,16 @@
+<!-- Write a program to find the factorial of the user input -->
+
+<script>
+let val = +prompt("enter the value",0);
+let result = factorial(val);
+alert(`Factorial of the ${val} is ${result}`);
+
+
+function factorial(val){
+    let res = 1;
+    for(let i=1;i<val;i++){
+        res =factorial(val-1) * val; 
+    }
+    return res;
+}
+</script>
