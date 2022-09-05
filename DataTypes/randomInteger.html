@@ -1,0 +1,12 @@
+<script>
+    function randomInteger(val1,val2){
+        let res = val1-0.5 + Math.random() * (val2-val1);
+        
+        return Math.round(res);
+    }
+
+    let min = prompt("enter the range minimum value ",0);
+    let max = prompt("enter the range maximum value", 0);
+    alert( randomInteger(min,max));
+   
+</script>

@@ -1,0 +1,25 @@
+<!-- You will given 2 parameters: a low and high number. your goal is to print all  numbers between low and high, and for each of these numbers 
+    print whether or not the number is divisible by 3. if the number is divisible by 3, print the word "div3" directly after the number. -->
+
+<script>
+    function printAllNumber(min,max){
+        let res = [];
+        for(let i=min;i<=max;i++){
+            if(i % 3 ==0){
+                res.push(i+' div3')
+            } else{
+                res.push(i);
+            }
+        }
+        return res;
+    }
+
+
+    let minValue = +prompt("Enter minimum value to display",0);
+    let maxValue = +prompt("Enter maximum value to display",0);
+    let res = printAllNumber(minValue,maxValue);
+    for(let i in res){
+        alert(res[i]);
+        console.log(res[i]);
+    }
+</script>

@@ -1,0 +1,14 @@
+<!-- Write a program to print fibonocci series -->
+
+<script>
+
+let fibonocciSeries = (num) => {
+    if(num < 2){
+        return num;
+    } else {
+        return fibonocciSeries(num-1) + fibonocciSeries(num-2);
+    }
+}
+let val = +prompt("Enter the number " , 0);
+alert(`fibonocci series is : ${fibonocciSeries(val)}`);
+</script>

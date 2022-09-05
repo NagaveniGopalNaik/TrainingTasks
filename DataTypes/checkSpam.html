@@ -1,0 +1,14 @@
+<script>
+function checkSpam(str){
+    let val = str.toLowerCase();
+    if(val.includes("viagra") || val.includes("xxx")){
+        return true;
+    } else{
+        return false;
+    }
+    
+}
+
+    let str = prompt("Enter the string");
+    alert(checkSpam(str));
+</script>

@@ -1,0 +1,11 @@
+<script>
+function turncate(str,length){
+    let val = str.length;
+    if(val>length){
+        return str.slice(0,length - 1) +"...";
+    }
+}
+    let val = prompt("Enter your string");
+    let length = +prompt("Enter maximam string value");
+    alert(turncate(val,length));
+</script>

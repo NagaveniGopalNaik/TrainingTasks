@@ -1,0 +1,14 @@
+<script>
+
+Swap = (val1,val2) =>{
+    val2 = val1 + val2;
+    val1 = val2 - val1;
+    val2 = val2 - val1;
+    return {val1,val2};
+}
+    let val1 = +prompt("Enter the first value");
+    let val2 = +prompt("Enter the second value");
+    let res = Swap(val1,val2);
+    alert(`First value ${res.val1}`);
+    alert(`Second value ${res.val2}`);
+</script>

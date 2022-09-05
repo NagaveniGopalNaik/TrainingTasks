@@ -1,0 +1,15 @@
+<script>
+    function  readNumber(){
+        let val = prompt("Enter the user value");
+        if(isNaN(val) == true){
+            readNumber();
+        } else if(val == '' || val == null || val == undefined){
+                alert(null);
+            }else{
+                alert(val);
+            }
+        
+       
+    }
+    readNumber();
+</script>

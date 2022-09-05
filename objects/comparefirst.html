@@ -1,0 +1,24 @@
+<!-- Write a program to check whether the given numbers have same last digit -->
+
+<script>
+
+compareFirstDigit=(val1,val2) => {
+      if(val1[0] == val2[0]){
+          return true;
+      } else{
+          return false;
+      }
+}
+
+
+    let val1 = prompt("Enter first number",0);
+    let val2 = prompt("Enter Second number",0);
+    console.log(typeof(val1));
+    let res = compareFirstDigit(val1,val2);
+
+    if(res === true){
+        alert(`${val1} and ${val2} has same first digit`);
+    } else {
+        alert(`${val1} and ${val2} not has same first digit`);
+    }
+</script>

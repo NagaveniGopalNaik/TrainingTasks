@@ -1,0 +1,29 @@
+<!-- Find out if a string is a rotation of another string. E.g ABCD is a rotation of BCDA but not ACBD. -->
+<script>
+    let str = prompt("Enter string");
+    let str1 = prompt("Enter rotated string");
+    let res = stringRotation(str,str1);
+    
+    if(res == true){
+        alert(`${str1} is roteted string of ${str}.`);
+    } else {
+        alert(`${str1} is not roteted string of ${str}.`);
+    }
+
+    function stringRotation(str,str1){
+        let res = [];
+        let string = str.toLowerCase();
+        let string1 = str1.toLowerCase();
+        for(let i = 0;i<string.length;i++){
+            res.push(string.slice(i)+string.slice(0,i));
+        }
+        for(let j=0;j<res.length;j++){
+            if(res[j]==string1){
+                return true;
+            }
+        }
+        return false;
+
+        
+    }
+</script>
