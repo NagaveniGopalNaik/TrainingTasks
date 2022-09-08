@@ -1,0 +1,11 @@
+<script>
+
+    let str = prompt("Enter the string");
+    alert(borderLeftWidth(str));
+
+    function borderLeftWidth(str){
+        // return str.split('-').map((word,index) => index == 0?word:word[0].toUpperCase());
+        str = str.toString().split('-').map((word,index) => index == 0? word : word[0].toUpperCase()+word.slice(1)).join('');
+        return str
+    }
+</script>

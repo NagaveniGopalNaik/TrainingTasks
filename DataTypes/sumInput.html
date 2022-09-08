@@ -1,0 +1,23 @@
+<script>
+
+    function sumInput(){
+        let arr = [];
+        let res = 0;
+        while(true){
+            let val = +prompt("Enter the number");
+            if(val != ''){
+                
+            res +=val;
+            arr.push(val);
+            }
+            else {
+                break;
+            }
+
+        }
+        console.log(arr);
+        return res;
+    }
+
+    alert(`Sum is ${sumInput()}`);
+</script>

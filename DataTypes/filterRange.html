@@ -1,0 +1,17 @@
+<script>
+
+    function filterRange(arr,a,b) {
+        let res = [];
+        for(let val of arr){
+            if(val >=a && val <=b){
+                res.push(val);
+            }
+        }
+        return res;
+    }
+
+    let arr = [5,3,8,1];
+    let filtered = filterRange(arr,1,4);
+    alert(filtered);
+    alert(arr);
+</script>

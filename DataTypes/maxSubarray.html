@@ -1,0 +1,32 @@
+<script>
+
+let arrLength = +prompt("Enter the array length ");
+let arr =[];
+for(let i=0;i<arrLength;i++){
+    let val = +prompt("Enter array elements");
+    if(val == undefined || val ==''){
+        break;
+    }
+    else {
+        arr.push(val);
+    }
+    
+   
+}
+alert(maxSubarray(arr));
+// console.log(arr);
+function maxSubarray(arr){
+    let max = 0;
+    let temp = 0;
+for (let val of arr){
+    temp += val;
+    max = Math.max(max,temp);
+    if(temp<0){
+        temp = 0;
+    }
+}
+
+    return max;
+}
+
+</script>
