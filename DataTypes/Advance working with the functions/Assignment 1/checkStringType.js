@@ -13,22 +13,24 @@ let student = {
     place : "bhatkal",
     
 };
-
+let start = Date.now();
+let str = "";
 function checkString(obj){
 
-        let str = "";
         for(let val of Object.values(obj)){
             if(typeof(val) === 'string'){
                 str += val+"\n";
             }
             else if(typeof(val) === 'object'){
-               str += checkString(val);
+               checkString(val);
             }
         }
-       
+   
     return str;
 
 }
 
 
 console.log(checkString(student));
+let diff = Date.now();
+alert(diff - start);
