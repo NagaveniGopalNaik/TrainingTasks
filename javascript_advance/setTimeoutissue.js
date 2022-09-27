@@ -5,10 +5,10 @@ setTimeout(function cb(){
 }, 5000);
 console.log("End");
 
-let startDate = new Date().getDate();
+let startDate = new Date().getTime();
 let endDate = startDate;
 
 while (endDate < startDate + 10000){
-    endDate = new Date().getDate();
+    endDate = new Date().getTime();
 }
-console.log("While expires");
+ console.log("While expires");
